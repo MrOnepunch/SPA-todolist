@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Todolist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/todo.css" media="screen" title="no title">
+
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body>
+        <div class="todo-main">
+            <div class="todo-left">
+                <div class="left-logo">
+                    <img src="images/头像.jpg" alt="" />
+                    <span>balabala</span>
+                </div>
+
+                <div class="left-task left-active">
+                    <i class="glyphicon glyphicon-paperclip left-top"></i>
+                    <a href="#task" id='id-task'>任务</a>
+                </div>
+
+                <div class="left-diary">
+                    <i class="glyphicon glyphicon-paperclip left-top"></i>
+                    <a href="#diary" id='id-diary'>日记</a>
+                </div>
+            </div>
+
+            <div class="todo-right">
+                <div class="right-top">
+                    <span>慎独</span>
+                    <a href="#" class='glyphicon glyphicon-chevron-left arrows'></a>
+                    <a href="#" class='glyphicon glyphicon-chevron-right arrows'></a>
+                </div>
+
+                <div class="right-center">
+                    <input type="text" class="form-control center-input" placeholder="新建任务">
+                    <button type='button' class="btn btn-info glyphicon glyphicon-plus center-button"></button>
+                </div>
+
+                <div class="right-list"></div>
+            </div>
+
+            <div class="todo-right-diary right-hide">
+                <div class="right-top-diary">
+                    <span>每日一记</span>
+                    <a href="#" class='glyphicon glyphicon-chevron-left arrows'></a>
+                    <a href="#" class='glyphicon glyphicon-chevron-right arrows'></a>
+                </div>
+
+                <div class="right-center-diary">
+                    <textarea class="form-control center-input-diary" placeholder="新建日记" rows="3"></textarea>
+                    <div class="diary-number">
+                        <span>还能输入</span>
+                        <span id="id-span-140">140</span>
+                        <span>个字</span>
+                        <button type='button' class="btn btn-info glyphicon center-button-diary">添加</button>
+                    </div>
+                </div>
+
+                <div class="right-list-diary"></div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/todo.js"></script>
+</html>
